@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
+@keyframes pulse {
+    0%   {
+        background-color: #B31B1B;
+        width: 25px;
+        height: 20px;
+    }
+    25%  {
+        background-color: white;
+        width: 300px;
+        height: 20px;
+    }
+    50%  {
+        background-color: #B31B1B;
+        width: 25px;
+        height: 20px;
+    }
+    75% {
+        background-color: white;
+        width: 300px;
+        height: 20px;
+    }
+    100%   {
+        background-color: #B31B1B;
+        width: 25px;
+        height: 20px;
+    }
+}
+
+@keyframes northslide {
+    0% {
+        margin-top: -2em;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 4em;
+        opacity: 1;
+    }
+}
+
+.break {
+    animation-name: pulse;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    border-radius: 25px;
+}
+
+body {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+}
+
+.strip1 {
+    animation-name: northslide;
+    animation-duration: 1s;
+    font-family: Inter;
+    text-align: center;
+    margin-top: 4em;
+    font-size: 3vh;
+}
+
+.red {
+    color: #B31B1B;
+}
+
+.stripstats {
+    animation-name: northslide;
+    animation-duration: 1s;
+    
+    text-align: center;
+    margin-top: 4em;
+    font-size: 2.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.stat {
+    margin: 0 7% 0 7%;
+}
+
+.num {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.numcaption {
+    font-family: Inter;
+}
+
+.stripbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-family: Inter;
+}
+
+.button {
+    border-radius: 50px;
+    color: white;
+    border: 3px solid white;
+    padding: 0.5em 1em 0.5em 1em;
+    transition: 1s;
+    text-decoration: none;
+    font-size: 3vh;
+    width: fit-content;
+    margin: 0 1em 0 1em;
+}
+
+.button:hover {
+    background-color: #B31B1B;
+    border: 3px solid #B31B1B;
+}
+
+.primarybutton {
+    border-radius: 50px;
+    color: white;
+    border: 3px solid #B31B1B;
+    padding: 0.5em 1em 0.5em 1em;
+    transition: 1s;
+    text-decoration: none;
+    font-size: 3vh;
+    width: fit-content;
+}
+
+.primarybutton:hover {
+    background-color: #B31B1B;
+    border: 3px solid #B31B1B;
+}
+
+footer {
+    position: fixed;
+    bottom: 1em;
+    font-family: Inter;
+    text-align: center;
+    left: 25%;
+    right: 25%;
+}
+
+.event {
+    border-bottom: 3px solid white;
+    margin: 3em 0 3em 0;
+    width: fit-content;
+}
+
+.event img {
+    width: 50%;
+}
+
+.event h2 {
+    font-family: Inter;
+    font-size: 2.5vh;
+}
+
+.event p {
+    font-family: Inter;
+    font-size: 2vh;
+}
