@@ -163,6 +163,7 @@ body {
 
 .primarybutton {
     border-radius: 50px;
+    font-family: Inter;
     color: white;
     border: 3px solid #B31B1B;
     padding: 0.5em 1em 0.5em 1em;
